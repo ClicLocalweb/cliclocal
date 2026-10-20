@@ -1,12 +1,468 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webcliclocal</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClicLocal | Que más clientes te encuentren en Google y lleguen a tu comercio</title>
+  <meta name="description" content="Consultora de SEO local en Córdoba, Argentina. Optimizamos la ficha de Google de tu comercio o pyme para que más personas te encuentren, te llamen y te visiten.">
+  <meta name="theme-color" content="#060a18">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="ClicLocal | SEO local para comercios y pymes de Córdoba">
+  <meta property="og:description" content="Más personas que te encuentran en Google Maps, más clientes que llegan a tu puerta.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Datos estructurados (JSON-LD). No es JavaScript: solo información para Google. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ClicLocal",
+    "description": "Consultora de SEO local para comercios y pymes de Córdoba, Argentina. Optimización de fichas de Google Business.",
+    "telephone": "+5493516161111",
+    "email": "comunidad@cliclocal.info",
+    "areaServed": { "@type": "AdministrativeArea", "name": "Córdoba, Argentina" }
+  }
+  </script>
 </head>
+
 <body>
-   <h1>ClicLocal</h1> 
+  <!-- Íconos reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></symbol>
+  </svg>
+
+  <!-- Fondo animado -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="grid"></span>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav">
+    <div class="container nav__in">
+      <a class="logo" href="#inicio" aria-label="ClicLocal, ir al inicio"><span class="logo__pin"></span>Clic<b>Local</b></a>
+
+      <input type="checkbox" id="menu" class="nav__toggle" aria-label="Abrir o cerrar el menú">
+      <label for="menu" class="nav__burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#inversion">Inversión</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="btn btn--sm" href="https://wa.me/5493516161111?text=Hola%20ClicLocal%2C%20quiero%20una%20auditor%C3%ADa%20express%20de%20mi%20ficha%20de%20Google." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chat"/></svg>Escribinos
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span>SEO local para comercios y pymes de Córdoba</p>
+          <h1>Cuando te buscan en Google Maps, <span class="grad">que te encuentren a vos.</span></h1>
+          <p class="lead">Optimizamos tu ficha de Google para que más personas te vean, te llamen y lleguen a tu comercio. Trato personal, conocimiento de la zona y reportes claros todos los meses.</p>
+
+          <div class="hero__cta">
+            <a class="btn btn--xl" href="https://wa.me/5493516161111?text=Hola%20ClicLocal%2C%20quiero%20una%20auditor%C3%ADa%20express%20de%20mi%20ficha%20de%20Google." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chat"/></svg>Pedí tu Auditoría Express
+            </a>
+            <a class="link-arrow" href="#servicios">Ver qué hacemos →</a>
+          </div>
+
+          <ul class="chips">
+            <li>Atención personalizada</li>
+            <li>Reportes claros cada mes</li>
+            <li>Tu ficha siempre a tu nombre</li>
+          </ul>
+        </div>
+
+        <!-- Visual: mapa ilustrativo -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="map">
+            <span class="pin pin--ghost p1"></span>
+            <span class="pin pin--ghost p2"></span>
+            <span class="pin pin--ghost p3"></span>
+            <span class="pin pin--ghost p4"></span>
+
+            <div class="you">
+              <span class="ripple"></span><span class="ripple r2"></span><span class="ripple r3"></span>
+              <span class="pin pin--main"></span>
+            </div>
+
+            <div class="ficha">
+              <div class="ficha__top">
+                <div>
+                  <strong>Tu comercio</strong>
+                  <span class="ficha__sub">Gastronomía · Abierto ahora</span>
+                </div>
+                <div class="stars"><span style="--i:0">★</span><span style="--i:1">★</span><span style="--i:2">★</span><span style="--i:3">★</span><span style="--i:4">★</span></div>
+              </div>
+              <div class="ficha__btns"><span>Llamar</span><span>Cómo llegar</span><span>Sitio web</span></div>
+            </div>
+          </div>
+
+          <div class="float f1"><i class="d d--mint"></i>Más llamadas</div>
+          <div class="float f2"><i class="d d--sky"></i>Más “cómo llegar”</div>
+          <div class="float f3"><i class="d d--coral"></i>Reseñas nuevas</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ CINTA DE RUBROS ============ -->
+    <section class="marquee" aria-label="Rubros con los que trabajamos">
+      <div class="marquee__track">
+        <ul>
+          <li>Gastronomía</li><li>Hotelería</li><li>Servicios</li><li>Comercios</li><li>Pymes</li><li>Turismo</li><li>Paravachasca</li><li>Calamuchita</li><li>Córdoba</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Gastronomía</li><li>Hotelería</li><li>Servicios</li><li>Comercios</li><li>Pymes</li><li>Turismo</li><li>Paravachasca</li><li>Calamuchita</li><li>Córdoba</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ IMPORTA ============ -->
+    <section class="section" id="porque">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">Por qué importa</span>
+          <h2>Tu próximo cliente ya está buscando. Y está cerca.</h2>
+          <p>Antes de salir de casa, mucha gente abre Google, mira fotos, horarios y reseñas, y elige. Si tu ficha no está lista, esa persona elige a otro.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal" style="--i:0">
+            <span class="num">01</span>
+            <h3>La decisión se toma en segundos</h3>
+            <p>Foto, horario, teléfono y estrellas. Con esos datos alcanza para que alguien te elija o te descarte.</p>
+          </article>
+          <article class="card reveal" style="--i:1">
+            <span class="num">02</span>
+            <h3>Una ficha abandonada resta</h3>
+            <p>Datos viejos, sin fotos y sin respuestas a las reseñas transmiten descuido, aunque tu comercio sea excelente.</p>
+          </article>
+          <article class="card reveal" style="--i:2">
+            <span class="num">03</span>
+            <h3>Tu competencia también está ahí</h3>
+            <p>En el mapa se compite cuadra a cuadra. Una ficha cuidada te pone un paso adelante de quienes no la atienden.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="kicker">Servicios</span>
+          <h2>Todo lo que tu ficha necesita, en manos de alguien que conoce la zona.</h2>
+          <p>No hacemos “SEO” por hacer. Hacemos que tu comercio se vea mejor, se encuentre más fácil y reciba más visitas.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card reveal" style="--i:0">
+            <span class="num">01</span>
+            <h3>Auditoría de tu ficha</h3>
+            <p>Revisamos nombre, dirección y teléfono (NAP), categorías, descripción, horarios y servicios. Te mostramos qué falta y qué se puede mejorar.</p>
+          </article>
+          <article class="card reveal" style="--i:1">
+            <span class="num">02</span>
+            <h3>Optimización completa</h3>
+            <p>Dejamos tu ficha ordenada y completa, con la información correcta y las categorías que mejor representan tu negocio.</p>
+          </article>
+          <article class="card reveal" style="--i:2">
+            <span class="num">03</span>
+            <h3>Fotos y publicaciones</h3>
+            <p>Imágenes y novedades que muestran tu comercio en acción y mantienen tu ficha viva mes a mes.</p>
+          </article>
+          <article class="card reveal" style="--i:0">
+            <span class="num">04</span>
+            <h3>Estrategia de reseñas</h3>
+            <p>Chip NFC y código QR para que tus clientes dejen su opinión en segundos, sin vueltas ni favores.</p>
+          </article>
+          <article class="card reveal" style="--i:1">
+            <span class="num">05</span>
+            <h3>Respuesta a reseñas</h3>
+            <p>Respondemos cada reseña con profesionalismo y calidez. Eso también lo ven quienes todavía no te conocen.</p>
+          </article>
+          <article class="card reveal" style="--i:2">
+            <span class="num">06</span>
+            <h3>Monitoreo y reporte mensual</h3>
+            <p>Seguimos tus posiciones y te enviamos un reporte con visitas, llamadas y “cómo llegar”. Siempre sabés qué está pasando.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="sec-head sec-head--center reveal">
+          <span class="kicker">Cómo trabajamos</span>
+          <h2>Un camino simple, con resultados que se pueden ver.</h2>
+          <p>Cada etapa tiene un entregable claro. Nada de promesas vagas.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal" style="--i:0">
+            <span class="step__n">1</span>
+            <h3>Auditoría Express</h3>
+            <p>Analizamos tu ficha y la de tu zona. Te contamos qué encontramos, en palabras simples.</p>
+          </li>
+          <li class="step reveal" style="--i:1">
+            <span class="step__n">2</span>
+            <h3>Puesta a punto</h3>
+            <p>Optimizamos tu ficha, cargamos fotos y lanzamos las primeras publicaciones.</p>
+          </li>
+          <li class="step reveal" style="--i:2">
+            <span class="step__n">3</span>
+            <h3>Reseñas en marcha</h3>
+            <p>Instalamos tu chip NFC y tu QR para que las opiniones lleguen todos los días.</p>
+          </li>
+          <li class="step reveal" style="--i:3">
+            <span class="step__n">4</span>
+            <h3>Mejora constante</h3>
+            <p>Mantenimiento mensual y reportes a los 30, 60 y 90 días para ver el avance.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ NFC / QR ============ -->
+    <section class="section nfc" id="reseñas-nfc">
+      <div class="container nfc__grid">
+        <div class="nfc__visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen">
+              <span class="phone__stars">★★★★★</span>
+              <strong>¡Gracias por tu reseña!</strong>
+              <span class="phone__bar"></span><span class="phone__bar short"></span>
+            </div>
+          </div>
+          <div class="tag">
+            <span class="wave w1"></span><span class="wave w2"></span><span class="wave w3"></span>
+            <b>NFC</b>
+          </div>
+        </div>
+
+        <div class="nfc__copy reveal">
+          <span class="kicker">Reseñas</span>
+          <h2>Más reseñas reales, sin pedir favores.</h2>
+          <p>Un chip NFC y un código QR en tu mostrador. Tu cliente apoya el celular o escanea, y deja su opinión en segundos.</p>
+          <ul class="list-check">
+            <li>Le pedimos la reseña a todos por igual, como indica Google.</li>
+            <li>Más opiniones recientes que refuerzan tu reputación.</li>
+            <li>Respondemos cada una por vos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INVERSIÓN ============ -->
+    <section class="section" id="inversion">
+      <div class="container">
+        <div class="sec-head sec-head--center reveal">
+          <span class="kicker">Inversión</span>
+          <h2>Precios claros, un solo plan, sin letra chica.</h2>
+          <p>Pagás una puesta a punto inicial y un mantenimiento mensual. Eso es todo.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="card price reveal" style="--i:0">
+            <h3>Puesta a punto</h3>
+            <p class="price__amount">$90.000</p>
+            <p class="price__note">Pago inicial único</p>
+            <ul class="list-check">
+              <li>Optimización de tu ficha: datos, categorías, descripción, horarios y servicios</li>
+              <li>Fotos y primeras publicaciones</li>
+              <li>Estrategia de reseñas con chip NFC y QR</li>
+            </ul>
+          </article>
+
+          <article class="card price price--hot reveal" style="--i:1">
+            <span class="badge">Plan único</span>
+            <h3>Mantenimiento</h3>
+            <p class="price__amount">$45.000 <small>/ mes</small></p>
+            <p class="price__note">Por ficha</p>
+            <ul class="list-check">
+              <li>Publicaciones y fotos nuevas</li>
+              <li>Respuesta a reseñas</li>
+              <li>Monitoreo de posiciones</li>
+              <li>Reporte mensual con visitas, llamadas y “cómo llegar”</li>
+              <li>Beneficio especial al llegar al mes 6</li>
+            </ul>
+          </article>
+
+          <article class="card price reveal" style="--i:2">
+            <h3>Sucursal adicional</h3>
+            <p class="price__amount">$35.000 <small>/ mes</small></p>
+            <p class="price__note">Por cada ficha extra del mismo comercio</p>
+            <ul class="list-check">
+              <li>El mismo servicio de mantenimiento</li>
+              <li>Ideal para cadenas y comercios con varias sucursales</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="fineprint reveal">Valores en pesos argentinos, revisados cada 3 meses. Tu ficha siempre queda a nombre de tu comercio.</p>
+      </div>
+    </section>
+
+    <!-- ============ RESEÑAS ============ -->
+    <section class="section reviews" id="resenas">
+      <div class="container">
+        <div class="sec-head sec-head--center reveal">
+          <span class="kicker">Reseñas</span>
+          <h2>Lo que dicen quienes trabajan con nosotros.</h2>
+        </div>
+      </div>
+
+      <!--
+        IMPORTANTE: las tarjetas de abajo son MARCADORES DE POSICIÓN.
+        Reemplazá cada una por una reseña real de un cliente (con su permiso)
+        y borrá la etiqueta <span class="review__tag">Ejemplo</span>.
+        Cada grupo se repite dos veces para que la cinta gire sin cortes:
+        si cambiás un texto, cambialo también en el segundo grupo.
+      -->
+      <div class="reviews__wrap">
+        <div class="reviews__track">
+          <div class="reviews__group">
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu primer cliente. Copiala tal cual la escribió, con su permiso.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu segundo cliente. Contá qué cambió en su comercio después de trabajar con vos.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu tercer cliente. Mejor si menciona el trato personal y el seguimiento.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars" aria-label="5 estrellas">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu cuarto cliente. Una frase corta y concreta funciona muy bien.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+          </div>
+
+          <div class="reviews__group" aria-hidden="true">
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu primer cliente. Copiala tal cual la escribió, con su permiso.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu segundo cliente. Contá qué cambió en su comercio después de trabajar con vos.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu tercer cliente. Mejor si menciona el trato personal y el seguimiento.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+            <figure class="review">
+              <span class="review__tag">Ejemplo</span>
+              <div class="review__stars">★★★★★</div>
+              <blockquote>Acá va la reseña real de tu cuarto cliente. Una frase corta y concreta funciona muy bien.</blockquote>
+              <figcaption class="review__who"><span class="avatar">N</span><span><strong>Nombre del cliente</strong><small>Rubro · Localidad</small></span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="section" id="preguntas">
+      <div class="container">
+        <div class="sec-head sec-head--center reveal">
+          <span class="kicker">Preguntas frecuentes</span>
+          <h2>Lo que más nos preguntan.</h2>
+        </div>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>¿Qué es la ficha de Google de mi comercio?</summary>
+            <p>Es el perfil que aparece cuando alguien busca tu negocio en Google o en Google Maps: muestra tu dirección, horarios, teléfono, fotos y reseñas. Es muchas veces lo primero que ve un cliente nuevo.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Necesito tener una página web?</summary>
+            <p>No. La ficha funciona por sí sola y es el punto de partida. Si más adelante querés sumar una página web, lo vemos cuando ya estés viendo mejoras.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿La ficha queda a nombre de mi comercio?</summary>
+            <p>Siempre. La ficha es tuya. Nosotros la administramos con tu autorización, y vos mantenés la propiedad en todo momento.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Cuánto tardo en ver resultados?</summary>
+            <p>Depende del rubro, de la zona y de la competencia. Por eso te enviamos un reporte mensual con visitas, llamadas y “cómo llegar”: ves el avance con datos, no con promesas.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Hay contrato de permanencia?</summary>
+            <p>Al comienzo trabajamos sin contrato formal. Las condiciones del servicio quedan por escrito, claras para las dos partes.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="cta reveal">
+          <span class="kicker">Empecemos</span>
+          <h2>Tu ficha puede estar trabajando para vos hoy mismo.</h2>
+          <p>Escribinos por WhatsApp y te hacemos una Auditoría Express de tu ficha. Sin vueltas y sin compromiso de entrada.</p>
+          <div class="cta__row">
+            <a class="btn btn--xl" href="https://wa.me/5493516161111?text=Hola%20ClicLocal%2C%20quiero%20una%20auditor%C3%ADa%20express%20de%20mi%20ficha%20de%20Google." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chat"/></svg>Escribinos por WhatsApp
+            </a>
+            <a class="link-arrow" href="mailto:comunidad@cliclocal.info">comunidad@cliclocal.info</a>
+          </div>
+          <p class="cta__phone">+54 9 351 616-1111</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__in">
+      <a class="logo" href="#inicio"><span class="logo__pin"></span>Clic<b>Local</b></a>
+      <p>SEO local para comercios y pymes de Córdoba, Argentina.</p>
+      <p><a href="mailto:comunidad@cliclocal.info">comunidad@cliclocal.info</a> · <a href="https://wa.me/5493516161111" target="_blank" rel="noopener">+54 9 351 616-1111</a></p>
+      <small>© 2026 ClicLocal. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" href="https://wa.me/5493516161111?text=Hola%20ClicLocal%2C%20quiero%20una%20auditor%C3%ADa%20express%20de%20mi%20ficha%20de%20Google." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chat"/></svg>
+  </a>
 </body>
 </html>
