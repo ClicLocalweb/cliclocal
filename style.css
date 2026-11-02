@@ -94,17 +94,11 @@ figure, blockquote { margin: 0; }
 }
 .nav__in { display: flex; align-items: center; justify-content: space-between; height: 72px; }
 
-.logo { display: inline-flex; align-items: center; gap: 0.65rem; font: 800 1.35rem var(--font-h); letter-spacing: -0.02em; }
-.logo b { color: var(--mint); }
-.logo__pin {
-  position: relative; width: 22px; height: 22px;
-  background: linear-gradient(135deg, var(--mint), var(--sky));
-  border-radius: 50% 50% 50% 0;
-  transform: translateY(-2px) rotate(-45deg);
-  animation: bob 2.6s ease-in-out infinite;
-}
-.logo__pin::after { content: ""; position: absolute; inset: 6px; background: var(--bg); border-radius: 50%; }
-@keyframes bob { 50% { transform: translateY(-6px) rotate(-45deg); } }
+.logo { display: inline-flex; align-items: center; }
+.logo img { display: block; height: 44px; width: auto; transition: transform 0.3s var(--ease); }
+.logo:hover img { transform: translateY(-2px); }
+.footer .logo img { height: 52px; }
+@media (max-width: 600px) { .logo img { height: 36px; } }
 
 .nav__links { display: flex; align-items: center; gap: 1.75rem; font-weight: 500; font-size: 0.98rem; color: var(--muted); }
 .nav__links a:not(.btn) { position: relative; padding: 0.25rem 0; transition: color 0.25s; }
